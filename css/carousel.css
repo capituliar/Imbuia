@@ -1,0 +1,20 @@
+/* CUSTOMIZA O CAROUSEL
+-------------------------------------------------- */
+
+/* Classe base do carousel */
+
+.carousel-item {
+  height: 33rem;
+  background-color: #584d3d;
+}
+
+/* CSS RESPONSIVE
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+  /* Aumenta o tamanho do conteúdo do carousel */
+  .carousel-caption p {
+    margin-top: 1.25rem;
+  }
+
+}
