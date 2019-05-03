@@ -6,11 +6,7 @@
 2. NAVBAR
 3. HERO
 4. 
-5. TESTIMONIALS
-6. IMAGE GALLERY
-7. PRICING
-8. CALL TO ACTION
-9. FOOTER
+
 
 -------CORES UTILIZADAS:
     ---Primárias: #669666 (verde) / #FFF (branco) / #584d3d (marrom escuro)
@@ -44,7 +40,6 @@ p {
         font-size: 40px !important;
     }
 }
-
 
 
 
@@ -159,14 +154,6 @@ main > .container {
     padding-top: 60px;
 }
 
-main > .container > .row > #cont-sobre > h2::after {
-    content: '';
-    width: 80%;
-	height: 2px;
-	background-color: #9f956c;
-    display: inline-block;
-    margin-left: 15px;
-}
 
 /*-----<CURSOS>--------------*/
 main > #cursos {
@@ -187,27 +174,34 @@ main > #cursos h1::after {
     display: block;
 }
 
-main > #cursos h2::before {
-    content: '';
-    width: 40%;
-	height: 2px;
-	background-color: #9f956c;
-    display: inline-block;
-    margin-right: 15px;
+main > #cursos h2 {
+    color: #584d3d;    
 }
 
 
 main > #cursos .text-on-back{
-        font-family: Playfair Display;
-        position:relative;
-        z-index:1;
-        font-size:8em;
-        font-weight:900;
-        color:rgba(0, 0, 0, 0.3);
-        margin-top: -60px;
-        margin-left: 75%;
+    font-family: Playfair Display;
+    position:relative;
+    z-index:1;
+    font-size:8em;
+    font-weight:900;
+    color:rgba(0, 0, 0, 0.3);
+    margin-top: -60px;
+    margin-left: 75%;
 }
 
+.carousel-item {
+    height: 33rem;
+    background-color: #9f956c;
+}
+
+@media (min-width: 40em) {
+    /* Aumenta o tamanho do conteúdo do carousel */
+    .carousel-caption p {
+      margin-top: 1.25rem;
+    }
+  
+}
 
 .imagem-curso {
     margin: 30px;
@@ -249,6 +243,11 @@ main #card-header-anual {
     background-color: #669666;
 }
 
+main #card-header-anual:hover {
+    background-image: linear-gradient(to bottom right, #669666, #527952);
+    
+}
+
 
 /*-------membros-----*/
 
@@ -272,15 +271,18 @@ main > #membros > .container > h2 {
 }
 
 
-/*-------------------CONTATO
-        Author: Paul
-        URL: https://codepen.io/peiche/pen/xOVpPo
----------------------*/
+/*-------------------CONTATO ---------------------*/
+
+
+/*==========Formulário
+    Author: Paul
+    URL: https://codepen.io/peiche/pen/xOVpPo
+======================*/
 
 .form-group {
     position: relative;
     margin-bottom: 1.5rem;
-  }
+}
   
   .form-control-placeholder {
     position: absolute;
@@ -288,15 +290,23 @@ main > #membros > .container > h2 {
     padding: 7px 0 0 13px;
     transition: all 200ms;
     opacity: 0.5;
+    color: #669666;
   }
   
   .form-control:focus + .form-control-placeholder,
   .form-control:valid + .form-control-placeholder {
-    font-size: 75%;
+    font-size: 85%;
     transform: translate3d(0, -100%, 0);
     opacity: 1;
+    color: #669666;
   }
-  
+
+
+  fieldset {
+      background-color: #202020;
+      padding-top: 40px; 
+  }
+
 
 
 

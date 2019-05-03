@@ -2,23 +2,22 @@
 <html lang="pt-br">
 
 <head>
-    <!-- meta tags -->
+  <!-- meta tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Oferecemos mais que cursos, damos a você a oportunidade de mudar o mundo">
     <meta name="keywords" content="sustentabilidade, cursos, educação, imbuia">
 
-    <title>Cursos Imbuia</title>
+  <title>Cursos Imbuia</title>
 
-    <!--FONTES-->
+  <!--FONTES-->
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,700i" rel="stylesheet">
 
-    <!-- Bootstrap CSS -->
+  <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./css/bootstrap.css">
-    <link href="./css/carousel.css" rel="stylesheet">
 
-    <!-- CSS -->
+  <!-- CSS -->
     <link href="./css/style.css" rel="stylesheet">
 </head>
 
@@ -128,7 +127,7 @@
                            <div class="carousel-caption text-left col-md-4">
                                  <h2>Cursos</h2>
    
-                                 <h1>bioconstrução</h1>
+                                 <h1>permacultura</h1>
                                  <h3 class="text-on-back">02</h3>
    
                                  <p>Construção de ambientes sustentáveis por meio do uso de materiais de baixo impacto ambiental, adequação da arquitetura ao clima local e tratamento de resíduos. </p>
@@ -147,7 +146,7 @@
                            <div class="carousel-caption text-left col-md-4">
                                  <h2>Cursos</h2>
    
-                                 <h1>bioconstrução</h1>
+                                 <h1>bambu</h1>
                                  <h3 class="text-on-back">03</h3>
    
                                  <p>Construção de ambientes sustentáveis por meio do uso de materiais de baixo impacto ambiental, adequação da arquitetura ao clima local e tratamento de resíduos. </p>
@@ -192,7 +191,7 @@
                           <li>Lorem</li>
                           <li>Lorem</li>
                         </ul>
-                        <button type="button" class="btn btn-block btn-outline-primary">Compre</button>
+                        <button type="button" class="btn btn-block btn-outline-secundary">Compre</button>
                       </div>
                     </div>
                     <div class="card mb-4 shadow-sm">
@@ -207,7 +206,7 @@
                           <li>Suporte por email prioritário</li>
                           <li>Acesso ao centro de ajuda</li>
                         </ul>
-                        <button type="button" class="btn btn-block btn-primary">Compre</button>
+                        <button type="button" class="btn btn-block btn-outline-primary">Compre</button>
                       </div>
                     </div>
                     <div class="card mb-4 shadow-sm">
@@ -235,47 +234,51 @@
         </section>
 
       <!--========================<contato>=====================-->
+
         <section id="contato" class="container">
-            <h2>Contato</h2>
+        <div class="row">
+            <div class="col-md-5">
+              <h2>Contato</h2>
             
-            <h1>entre em contato</h1>
-            <p>Ficaremos felizes em esclarecer qualquer dúvida.<br>
-            Também atendemos nos seguintes contatos:</p>
+              <h1>entre em contato</h1>
+              <p>Ficaremos felizes em esclarecer qualquer dúvida.<br>
+              Também atendemos nos seguintes contatos:</p>
+              <p><b>Telefone:</b> (77) 99999-9999
+              <br><b>Email: </b> email@exemplo.com</p>
+                   
+            </div>
 
-            <p><b>Telefone:</b> (77) 99999-9999
-            <br><b>Email: </b> email@exemplo.com</p>
-
-
-            <!--FORMULÁRIO
+              <!--FORMULÁRIO ADAPTADO DE
                Author: Paul
                URL: https://codepen.io/peiche/pen/xOVpPo -->
+            <div class="col-md-7">
+              <fieldset>
+              <form class="row" method="POST" action="./contato.php">
+                <div class="col-md-10 mx-auto">
+                
+                  <div class="form-group">
+                  <input type="text" id="name" class="form-control" required>
+                  <label class="form-control-placeholder" for="name">Digite seu nome</label>
+                </div>
+                
+                <div class="form-group">
+                  <input type="email" id="email" class="form-control" required>
+                  <label class="form-control-placeholder" for="email">Digite seu email</label>
+                </div>
+                
+                <div class="form-group">
+                    <textarea id="message" class="form-control" required maxlength="140" rows="7"></textarea>
+                    <label class="form-control-placeholder" for="message">Digite sua mensagem</label>
+                  </div>
 
-            <fieldset>
-                <form>
-                           <div class="row">
-                             <div class="col-md-6 mx-auto">
-                               <div class="form-group">
-                                 <input type="text" id="name" class="form-control" required>
-                                 <label class="form-control-placeholder" for="name">Digite seu nome</label>
-                               </div>
-
-                               <div class="form-group">
-                                 <input type="email" id="email" class="form-control" required>
-                                 <label class="form-control-placeholder" for="email">Digite seu email</label>
-                               </div>
-
-                               <div class="form-group">
-                                    <input type="textarea" id="textarea" class="form-control" required>
-                                    <label class="form-control-placeholder" for="textarea">email</label>
-                              </div>
-        
-                              </div>
-                           </div>
-                         </div>
-                         
-                </form>
-            </fieldset>
-
+               
+                <button type="submit" name="submit" class="btn btn-primary">Enviar mensagem</button>
+                
+                </div>
+              </form>
+              </fieldset>
+            </div>
+          </div>
         </section>
 
     </main>

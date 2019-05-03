@@ -1842,10 +1842,10 @@ pre code {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #495057;
-  background-color: #fff;
+  color: #fff;
+  background-color: transparent;
   background-clip: padding-box;
-  border: 1px solid #ced4da;
+  border: 1px solid #669666;
   border-radius: 0.25rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
@@ -2670,11 +2670,22 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-primary {
-  color: #9f956c;
-  border-color: #9f956c;
+  color: #fff;
+  background-color: #669666;
 }
 
 .btn-outline-primary:hover {
+  color: #fff;
+  background-image: linear-gradient(to bottom right, #669666, #527952);
+}
+
+.btn-outline-secundary {
+  color: #9f956c;
+  border-color: #9f956c;
+  background-color: transparent;
+}
+
+.btn-outline-secundary:hover {
   color: #fff;
   background-color: #9f956c;
   border-color: #9f956c;
@@ -2862,8 +2873,8 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-light {
-  color: #9f956c;
-  border-color: #9f956c;
+  color: #669666;
+  border-color: #669666;
 }
 
 .btn-outline-light:hover {
@@ -2960,8 +2971,7 @@ fieldset:disabled a.btn {
 }
 
 .btn-block {
-  display: block;
-  width: 100%;
+  width: 65%;
 }
 
 .btn-block + .btn-block {
@@ -4502,7 +4512,7 @@ input[type="button"].btn-block {
 .navbar-dark .navbar-nav .active > .nav-link,
 .navbar-dark .navbar-nav .nav-link.show,
 .navbar-dark .navbar-nav .nav-link.active {
-  color: #9f956c;
+  color: #669666;
 }
 
 .navbar-dark .navbar-toggler {
@@ -4536,7 +4546,8 @@ input[type="button"].btn-block {
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
-  border-radius: 0.25rem;
+  border-radius: 0.30rem;
+  
 }
 
 .card > hr {
