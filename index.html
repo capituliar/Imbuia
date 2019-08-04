@@ -9,6 +9,7 @@
     <meta name="keywords" content="sustentabilidade, cursos, educação, imbuia">
 
   <title>Cursos Imbuia</title>
+  <link rel="shortcut icon" href="icon-aba.png">
 
   <!--FONTES-->
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
@@ -73,7 +74,7 @@
         
       <!--========================<sobre>=====================-->
         <section id="sobre" class="container">
-            <div class="row">
+            <div class="row" data-anime>
                 <div class="col-md-6">
                     <img class="img-fluid" src="./imagens/sobre-trees.png">
                 </div>
@@ -100,77 +101,72 @@
       <!--========================<cursos>=====================-->
         <section id="cursos">
 
-         
-            <div id="myCarousel" class="carousel slide carousel-fade">
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-                      <div class="container">
-                        <div class="carousel-caption text-left col-md-4">
-                              <h2>Cursos</h2>
-
-                              <h1>bioconstrução</h1>
-                              <h3 class="text-on-back">01</h3>
-
-                              <p>Construção de ambientes sustentáveis por meio do uso de materiais de baixo impacto ambiental, adequação da arquitetura ao clima local e tratamento de resíduos. </p>
-                              <p>Devemos pensar na sustentabilidade em nível local (cuidado com a terra, manejo sustentável das matas, extração consciente dos recursos) e em nível global.
-                                 Para colaborar para a construção de um mundo mais sustentável devemos, por exemplo, consumir com cuidado, dando preferência a produtos da região, e optar pelo uso de energias renováveis.</p>
-                                   
-                           </div>
-                           <div class="imagem-curso text-right">
-                                 <img class="img-fluid" src="./imagens/cursos-bio.png">
-   
-                        </div>
-                      </div>
-                    </div>
-                    <div class="carousel-item">
-                      <div class="container">
-                           <div class="carousel-caption text-left col-md-4">
-                                 <h2>Cursos</h2>
-   
-                                 <h1>permacultura</h1>
-                                 <h3 class="text-on-back">02</h3>
-   
-                                 <p>Construção de ambientes sustentáveis por meio do uso de materiais de baixo impacto ambiental, adequação da arquitetura ao clima local e tratamento de resíduos. </p>
-                                 <p>Devemos pensar na sustentabilidade em nível local (cuidado com a terra, manejo sustentável das matas, extração consciente dos recursos) e em nível global.
-                                    Para colaborar para a construção de um mundo mais sustentável devemos, por exemplo, consumir com cuidado, dando preferência a produtos da região, e optar pelo uso de energias renováveis.</p>
-                                      
-                              </div>
-                              <div class="imagem-curso text-right">
-                                    <img class="img-fluid" src="./imagens/cursos-bio.png">
-      
-                           </div>
-                      </div>
-                    </div>
-                    <div class="carousel-item">
-                      <div class="container">
-                           <div class="carousel-caption text-left col-md-4">
-                                 <h2>Cursos</h2>
-   
-                                 <h1>bambu</h1>
-                                 <h3 class="text-on-back">03</h3>
-   
-                                 <p>Construção de ambientes sustentáveis por meio do uso de materiais de baixo impacto ambiental, adequação da arquitetura ao clima local e tratamento de resíduos. </p>
-                                 <p>Devemos pensar na sustentabilidade em nível local (cuidado com a terra, manejo sustentável das matas, extração consciente dos recursos) e em nível global.
-                                    Para colaborar para a construção de um mundo mais sustentável devemos, por exemplo, consumir com cuidado, dando preferência a produtos da região, e optar pelo uso de energias renováveis.</p>
-                                      
-                              </div>
-                              <div class="imagem-curso text-right">
-                                    <img class="img-fluid" src="./imagens/cursos-bio.png">
-      
-                           </div>
-                      </div>
+            <div id="galeria" class="carousel slide carousel-fade" data-ride="carousel" data-interval="900000">
+                <ol class="carousel-indicators">
+                    <li data-target="#galeria" data-slide-to="0" class="active"></li>
+                    <li data-target="#galeria" data-slide-to="1"></li>
+                    <li data-target="#galeria" data-slide-to="2"></li>
+                </ol>
+                  
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./imagens/cursos-bioc.png" class="img-fluid d-block">
+  
+                    <div class="carousel-caption col-md-4">
+                        <h2 class="text-left">Cursos</h2>
+                        <h1>bioconstrução</h1>
+                        <h3 class="text-on-back">01</h3>
+                        <p>Construção de ambientes sustentáveis por meio do uso de materiais de baixo impacto ambiental, adequação da arquitetura ao clima local e tratamento de resíduos. </p>
+                        <p>Devemos pensar na sustentabilidade em nível local (cuidado com a terra, manejo sustentável das matas, extração consciente dos recursos) e em nível global.
+                            Para colaborar para a construção de um mundo mais sustentável devemos, por exemplo, consumir com cuidado, dando preferência a produtos da região, e optar pelo uso de energias renováveis.</p>
+  
                     </div>
                   </div>
-                  <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Voltar</span>
+  
+                  <div class="carousel-item">
+                      <img src="./imagens/cursos-bambu.png" class="img-fluid d-block">
+  
+                      <div class="carousel-caption text-left col-md-4">
+                          <h2>Cursos</h2>
+                          <h1>bambu</h1>
+                          <h3 class="text-on-back">02</h3>
+                          <p>Construção de ambientes sustentáveis por meio do uso de materiais de baixo impacto ambiental, adequação da arquitetura ao clima local e tratamento de resíduos. </p>
+                          <p>Devemos pensar na sustentabilidade em nível local (cuidado com a terra, manejo sustentável das matas, extração consciente dos recursos) e em nível global.
+                              Para colaborar para a construção de um mundo mais sustentável devemos, por exemplo, consumir com cuidado, dando preferência a produtos da região, e optar pelo uso de energias renováveis.</p>
+                              
+                      </div>
+    
+                    </div>
+  
+                    <div class="carousel-item">
+                        <img src="./imagens/cursos-permacultura.png" class="img-fluid d-block">
+  
+                        <div class="carousel-caption text-left col-md-4">
+                            <h2>Cursos</h2>
+                            <h1>permacultura</h1>
+                            <h3 class="text-on-back">03</h3>
+                            <p>Construção de ambientes sustentáveis por meio do uso de materiais de baixo impacto ambiental, adequação da arquitetura ao clima local e tratamento de resíduos. </p>
+                            <p>Devemos pensar na sustentabilidade em nível local (cuidado com a terra, manejo sustentável das matas, extração consciente dos recursos) e em nível global.
+                                Para colaborar para a construção de um mundo mais sustentável devemos, por exemplo, consumir com cuidado, dando preferência a produtos da região, e optar pelo uso de energias renováveis.</p>
+                                
+                        </div>
+      
+                      </div>
+                  </div>
+                  
+                  <a class="carousel-control-prev" href="#galeria" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    <span class="sr-only">Anterior</span>
                   </a>
-                  <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Avançar</span>
-                  </a>
+  
+                  <a class="carousel-control-next" href="#galeria" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon"></span>
+                      <span class="sr-only">Próximo</span>
+                    </a>
+    
                 </div>
-
+  
+  
         </section>
 
       <!--========================<planos>=====================-->
@@ -251,6 +247,7 @@
               <!--FORMULÁRIO ADAPTADO DE
                Author: Paul
                URL: https://codepen.io/peiche/pen/xOVpPo -->
+
             <div class="col-md-7">
               <fieldset>
               <form class="row" method="POST" action="./contato.php">
@@ -284,8 +281,8 @@
     </main>
 
     <footer>
-        <!--MÍDIAS SOCIAIS-->
-         <p>Todos os direitos reservados</p>
+      
+
     </footer>
     
     <!-- jQuery and Bootstrap -->
