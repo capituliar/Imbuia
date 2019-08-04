@@ -5,12 +5,18 @@
 1. ESTILOS GERAIS
 2. NAVBAR
 3. HERO
-4. 
+4. MAIN
+    4.1 SOBRE
+    4.2 CURSOS
+    4.3 PLANOS
+        4.3.1 MEMBROS 
+    4.4 CONTATO
+5. FOOTER
 
 
 -------CORES UTILIZADAS:
-    ---Primárias: #669666 (verde) / #FFF (branco) / #584d3d (marrom escuro)
-    ---Secundárias: #9f956c (castanho claro) / #202020 (preto)
+    ---Primárias: #669666 (verde) / #FFF (branco) / #9f956c (castanho claro)
+    ---Secundárias: #584d3d (marrom escuro) / #202020 (preto)
 */
 
 
@@ -175,30 +181,33 @@ main > #cursos h1::after {
 }
 
 main > #cursos h2 {
-    color: #584d3d;    
+    color: white;    
 }
 
 
 main > #cursos .text-on-back{
     font-family: Playfair Display;
-    position:relative;
-    z-index:1;
+    position: relative;
+    z-index: -10;
     font-size:8em;
     font-weight:900;
-    color:rgba(0, 0, 0, 0.3);
+    color:rgba(159, 149, 108, 0.6);
     margin-top: -60px;
     margin-left: 75%;
 }
 
 .carousel-item {
-    height: 33rem;
+    height: 37rem;
     background-color: #9f956c;
 }
 
-@media (min-width: 40em) {
-    /* Aumenta o tamanho do conteúdo do carousel */
+@media (max-width: 1000px) {
+    .carousel-caption {
+        margin-bottom: -200px;
+    }
     .carousel-caption p {
       margin-top: 1.25rem;
+
     }
   
 }
@@ -206,6 +215,11 @@ main > #cursos .text-on-back{
 .imagem-curso {
     margin: 30px;
 }
+
+#galeria {
+    padding-top: 0px;
+}
+
 
 /*------------------PLANOS--------------*/
 
@@ -249,7 +263,7 @@ main #card-header-anual:hover {
 }
 
 
-/*-------membros-----*/
+/*-------MEMBROS-----*/
 
 main > #membros {
     background-image: url(../imagens/planos-papagaio.png);
@@ -301,13 +315,19 @@ main > #membros > .container > h2 {
     color: #669666;
   }
 
+/*fim formulário*/
 
   fieldset {
       background-color: #202020;
       padding-top: 40px; 
   }
 
-
+  @media (max-width:767px) {
+    fieldset {
+        padding: 10px;
+    }
+}
+  
 
 
 /*=======================================<FOOTER>====================================*/
