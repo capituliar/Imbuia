@@ -96,7 +96,7 @@ URI     : https://surjithctly.in/ */
 
 header.hero {
     padding: 100px 0 0;
-    background-image: url(../imagens/header-casa.png);
+    background-image: url(../imagens/header-casa.jpg);
     width:100%;
 	height: 700px;
 	background-repeat: no-repeat;
@@ -266,7 +266,7 @@ main #card-header-anual:hover {
 /*-------MEMBROS-----*/
 
 main > #membros {
-    background-image: url(../imagens/planos-papagaio.png);
+    background-image: url(../imagens/planos-papagaio.jpg);
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
@@ -334,6 +334,12 @@ main > #membros > .container > h2 {
 footer {
     background-color: #202020;
     width: 100%;
-    height: 80px;
+    height: 100px;
 }
 
+footer img {
+    width: 30px;
+    margin-top: 30px;
+    margin-right: 10px;
+
+}
