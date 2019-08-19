@@ -12,7 +12,7 @@
         4.3.1 MEMBROS 
     4.4 CONTATO
 5. FOOTER
-
+6. PÁGINA EM CONSTRUÇÃO 
 
 -------CORES UTILIZADAS:
     ---Primárias: #669666 (verde) / #FFF (branco) / #9f956c (castanho claro)
@@ -184,6 +184,9 @@ main > #cursos h2 {
     color: white;    
 }
 
+main > #cursos img {
+    min-height: 100%;
+}
 
 main > #cursos .text-on-back{
     font-family: Playfair Display;
@@ -221,7 +224,7 @@ main > #cursos .text-on-back{
 }
 
 
-/*------------------PLANOS--------------*/
+/*-------<PLANOS>--------------*/
 
 main > #planos {
     padding-top: 60px;
@@ -254,16 +257,11 @@ main > #planos .container {
 }
 
 main #card-header-anual {
-    background-color: #669666;
-}
-
-main #card-header-anual:hover {
     background-image: linear-gradient(to bottom right, #669666, #527952);
-    
 }
 
 
-/*-------MEMBROS-----*/
+/*-------<MEMBROS>-----*/
 
 main > #membros {
     background-image: url(../imagens/planos-papagaio.jpg);
@@ -324,10 +322,12 @@ main > #membros > .container > h2 {
 
   @media (max-width:767px) {
     fieldset {
-        padding: 10px;
+        padding: 25px;
     }
 }
-  
+
+/* ====================== </MAIN> =========================*/
+
 
 
 /*=======================================<FOOTER>====================================*/
@@ -342,4 +342,31 @@ footer img {
     margin-top: 30px;
     margin-right: 10px;
 
+}
+/*=======================================</FOOTER>====================================*/
+
+
+/*========================================= PÁGINA EM MANUTENÇÃO ====================================*/
+#manutencao {
+    background-image: url(../imagens/manutencao.jpg);
+    color: white;
+}
+
+#manutencao #aviso {
+    margin-top: 15%;
+}
+
+#manutencao h1 {
+    color: white;
+    font-size: 100px;
+}
+
+@media (max-width: 768px) {
+    #manutencao h1 {
+        font-size: 70px !important;
+    }
+}
+
+#manutencao p {
+    text-align: center;
 }
